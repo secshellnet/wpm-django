@@ -1,0 +1,3 @@
+include README.md
+recursive-include wpm/static *
+recursive-include wpm/templates *
