@@ -1,6 +1,6 @@
 import requests
 
-from wpm.models import Peer
+from ..models import Peer
 
 
 def check_valid():

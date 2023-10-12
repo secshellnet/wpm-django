@@ -9,8 +9,8 @@ class WpmConfig(AppConfig):
     verbose_name = _("wpm")
 
     def ready(self):
-        from wpm.services.check_valid import check_valid
-        import wpm.signals
+        from .services.check_valid import check_valid
+        from . import signals
 
         # add the check_valid task - which checks the status of invalid
         # peers using the api on the wireguard endpoint - to the scheduler, to run it every 5 seconds

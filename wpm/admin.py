@@ -3,8 +3,8 @@ from django.forms import CharField, ModelForm, Textarea, TextInput, BooleanField
 from django.utils.html import format_html
 from django.utils.translation import gettext_lazy as _
 
-from wpm.models import Peer, WireguardEndpoint, DNSServer
-from wpm.signals import delete_handler
+from .models import Peer, WireguardEndpoint, DNSServer
+from .signals import delete_handler
 
 WG_CONFIG = """# Secure Shell Networks: {gateway}
 

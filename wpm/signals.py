@@ -2,7 +2,7 @@ import requests
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
-from wpm.models import Peer
+from .models import Peer
 
 
 @receiver(post_save, sender=Peer)
