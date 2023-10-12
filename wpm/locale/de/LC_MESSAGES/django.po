@@ -1,0 +1,99 @@
+# German translations for wpm-django.
+# Copyright (C) 2023
+# This file is distributed under the same license as the secshell.de package.
+# Nico Felbinger <26925347+felbinger@users.noreply.github.com>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-01 12:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: wpm/models.py:74
+msgid "owner"
+msgstr "Besitzer"
+
+#: wpm/models.py:95
+msgid "created"
+msgstr "Erstellt"
+
+#: wpm/admin.py:29
+msgid ""
+"This key has been generated in the browser.Feel free to overwrite the public "
+"key below to use your own key."
+msgstr ""
+"Dieser Schlüssel wurde im Browser generiert. Sie können auch Ihren eigenen "
+"Schlüssel nutzen und ihren öffentlichen Schlüssel unten angeben."
+
+#: wpm/admin.py:31
+msgid "configure psk"
+msgstr "Pre-Shared Key konfigurieren"
+
+#: wpm/admin.py:75 wpm/models.py:96
+msgid "valid"
+msgstr "Gültig"
+
+#: wpm/apps.py:8
+msgid "wpm"
+msgstr "Wireguard Peer Manager"
+
+#: wpm/models.py:14
+msgid "dns server"
+msgstr "DNS Server"
+
+#: wpm/models.py:15
+msgid "dns servers"
+msgstr "DNS Server"
+
+#: wpm/models.py:17
+msgid "ip address"
+msgstr "IP Adresse"
+
+#: wpm/models.py:26 wpm/models.py:73
+msgid "wireguard endpoint"
+msgstr "Wireguard Endpunkt"
+
+#: wpm/models.py:27
+msgid "wireguard endpoints"
+msgstr "Wireguard Endpunkte"
+
+#: wpm/models.py:53 wpm/models.py:83
+msgid "public key"
+msgstr "Öffentlicher Schlüssel"
+
+#: wpm/models.py:60
+msgid "api token"
+msgstr "API Token"
+
+#: wpm/models.py:70
+msgid "peer"
+msgstr "Peer"
+
+#: wpm/models.py:71
+msgid "peers"
+msgstr "Peers"
+
+#: wpm/models.py:75
+msgid "name"
+msgstr "Bezeichnung"
+
+#: wpm/models.py:81
+msgid "tunnel ipv4"
+msgstr "Tunnel IPv4 Adresse"
+
+#: wpm/models.py:82
+msgid "tunnel ipv6"
+msgstr "Tunnel IPv6 Adresse"
+
+#: wpm/models.py:89
+msgid "psk"
+msgstr "Pre-Shared Key"

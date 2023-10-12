@@ -12,6 +12,8 @@ class WpmConfig(AppConfig):
         from wpm.services.check_valid import check_valid
         import wpm.signals
 
+        # add the check_valid task - which checks the status of invalid
+        # peers using the api on the wireguard endpoint - to the scheduler, to run it every 5 seconds
         scheduler = BackgroundScheduler()
         scheduler.add_job(check_valid, 'interval', seconds=5)
         scheduler.start()
