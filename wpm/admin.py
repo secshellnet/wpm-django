@@ -14,7 +14,7 @@ Address = {addresses}
 DNS = {dns}
 
 [Peer]
-PublicKey = b5V840pvHj0JPyjh6IAvEtIaEK0XNsabssvk6iNEpDc=
+PublicKey = {endpoint_public_key}
 Endpoint = {endpoint}
 AllowedIPs = 0.0.0.0/0,::/0
 PersistentKeepalive = 30
@@ -114,6 +114,7 @@ class PeerAdmin(admin.ModelAdmin):
             form.base_fields["config"].initial = WG_CONFIG.format(**{
                 "gateway": obj.endpoint.name,
                 "addresses": obj.tunnel_ips(),
+                "endpoint_public_key": obj.endpoint.public_key,
                 "endpoint": f"{obj.endpoint.endpoint_ip}:{obj.endpoint.endpoint_port}",
                 "dns": ','.join([dns.ip_address for dns in obj.endpoint.dns_server.all()]),
             })
